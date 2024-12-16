@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatwa Survival</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <section id="welcome-screen">
+      <div class="welcome-container">
+        <h1 class="title">Fatwa Survival</h1>
+        <p class="tagline">Uji pengetahuan anda tentang fatwa dan isu fiqh semasa!</p>
+        <button onclick="startGame()">Mula Permainan</button>
+      </div>
+    </section>
+    <section id="question-screen" class="hidden">
+      <h2 id="question-text"></h2>
+      <div id="options"></div>
+      <p>Skor: <span id="score">0</span></p>
+    </section>
+    <section id="final-score-screen" class="hidden">
+      <h2 id="final-message"></h2>
+      <p>Skor Anda: <span id="final-score"></span></p>
+      <button onclick="location.reload()">Main Semula</button>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
